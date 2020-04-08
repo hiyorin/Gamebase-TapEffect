@@ -1,8 +1,11 @@
 {
-    "name": "[PackageName]",
+    "name": "Gamebase-TapEffect.Editor",
     "references": [
+        "GUID:48f37a7b1d57c4be8be5bc225fbbf17d"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
