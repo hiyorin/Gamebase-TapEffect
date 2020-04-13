@@ -1,0 +1,21 @@
+{
+    "name": "Gamebase-TapEffect.NodeCanvas",
+    "references": [
+        "GUID:79f241bf0d6d3447088b00197fc05a88",
+        "GUID:560b04d1a97f54a4e82edc0cbbb69285",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:b134867f3cd9e37428b652f97bf28b72",
+        ""
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "GAMEBASE_ADD_NODECANVAS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
