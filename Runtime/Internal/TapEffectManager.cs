@@ -12,8 +12,6 @@ namespace Gamebase.TapEffect.Internal
     {
         [Inject] private TapEffectSettings settings = null;
 
-        [Inject] private Camera uiCamera = null;
-
         private string currentName;
         
         private TapEffectBase instance;
@@ -38,8 +36,9 @@ namespace Gamebase.TapEffect.Internal
         {
             if (instance == null || !isEnable)
                 return;
-            
-            var worldPosition = uiCamera.ScreenToWorldPoint(Input.mousePosition + uiCamera.transform.forward * 10.0f);
+
+            var camera = Camera.main;
+            var worldPosition = camera.ScreenToWorldPoint(Input.mousePosition + camera.transform.forward * 10.0f);
             
             if (Input.GetMouseButtonDown(0))
             {

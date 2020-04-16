@@ -11,7 +11,7 @@ namespace Gamebase.TapEffect
         
         public override void InstallBindings()
         {
-            Container.Bind<ITapEffectController>()
+            Container.BindInterfacesTo<TapEffectManager>()
                 .FromSubContainerResolve()
                 .ByMethod(InstallSubContainer)
                 .WithKernel()
@@ -20,7 +20,7 @@ namespace Gamebase.TapEffect
 
         private void InstallSubContainer(DiContainer subContainer)
         {
-            subContainer.BindInterfacesTo<TapEffectManager>().AsSingle();
+            subContainer.Bind<TapEffectManager>().AsSingle();
             subContainer.BindInstance(settings).AsSingle();
         }
     }
