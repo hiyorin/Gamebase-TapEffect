@@ -5,6 +5,8 @@
 - [Description](#description)
 - [Install](#install)
 - [Usege](#usage)
+  - [Setup](#setup)
+  - [Create TapEffect Prefab](#create-tapeffect-prefab)
 - [NodeCanvas Integration](#nodecanvas-integration)
 - [License](#license)
 
@@ -42,6 +44,19 @@ Or, use [UpmGitExtension](https://github.com/mob-sakai/UpmGitExtension.git) to i
 
 <br><br><br><br>
 ## Usage
+
+#### Setup
+- Create Installer
+  - Right Click in folder within the Project tag and Choose `Create/Installers/Gamebase/TapEffectInstaller`.
+  - Assign TapEffect Prefab.
+  
+#### Create TapEffect Prefab.
+- Shuriken
+  - Add ParticleTapEffect to GameObject.
+  - VisualEffect component is attached, please implement the effect.
+- VFX
+  - Add VfxTapEffect to GameObject.
+  - ParticleSystem component is attached, please implement the effect.
 
 <br><br><br><br>
 ## NodeCanvas Integration
